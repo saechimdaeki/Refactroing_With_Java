@@ -1,5 +1,10 @@
 ## 냄새 1. 이해하기 힘든 이름 (Mysterius Name)
-
+- 깔끔한 코드에서 가장 중요한 것 중 하나가 바로 `"좋은 이름"` 이다.
+- 함수, 변수, 클래스, 모듈의 이름 등 모두 어떤 역할을 하는지 어떻게 쓰이는지 직관적이어야 한다
+- 사용할 수 있는 리팩토링 기술
+    - 함수 선언 변경하기 (Change Function Declaration)
+    - 변수 이름 바꾸기 (Rename Variable)
+    - 필드 이름 바꾸기 (Rename Field)
 ### [실습 코드](/src/main/java/me/saechimdaeki/refactoring/_01_smell_mysterious_name/_01_before/StudyDashboard.java)
 
 #### 리팩토링 전 코드
@@ -37,12 +42,6 @@ public class StudyDashboard {
 }
 ```
 
-- 깔끔한 코드에서 가장 중요한 것 중 하나가 바로 `"좋은 이름"` 이다.
-- 함수, 변수, 클래스, 모듈의 이름 등 모두 어떤 역할을 하는지 어떻게 쓰이는지 직관적이어야 한다
-- 사용할 수 있는 리팩토링 기술
-    - 함수 선언 변경하기 (Change Function Declaration)
-    - 변수 이름 바꾸기 (Rename Variable)
-    - 필드 이름 바꾸기 (Rename Field)
 
 ### 리팩토링 1. 함수 선언 변경하기 (Change Function Declaration)
 
@@ -92,7 +91,7 @@ public class StudyDashboard {
 }
 ```
 ### 리팩토링 2. 변수 이름 바꾸기 (Rename Variable)
-- 더 많이 상요되는 변수일수록 그 이름이 더 중요하다.
+- 더 많이 사용되는 변수일수록 그 이름이 더 중요하다.
   - 람다식에서 사용하는 변수 vs 함수의 매개변수
 - 다이나믹 타입을 지원하는 언어에서는 타입을 이름에 넣기도 한다.
 - 여러 함수에 걸쳐 쓰이는 필드 이름에는 더 많이 고민하고 이름을 짓는다.
